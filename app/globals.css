@@ -190,23 +190,15 @@ button { font-family: inherit; }
 @media (max-width: 900px) {
   /* Header */
   .fy-header-inner { gap: 12px !important; padding: 12px 16px !important; }
-  .fy-nav-main {
-    display: flex !important;
-    gap: 16px !important;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    justify-content: flex-start !important;
-    padding-right: 8px;
-  }
-  .fy-nav-main::-webkit-scrollbar { display: none; }
-  .fy-nav-main a { white-space: nowrap; font-size: 12px !important; }
+  .fy-nav-main { display: none !important; }
   .fy-header-cta { gap: 8px !important; }
   .fy-header-lang { display: none !important; }
   .fy-acil {
     padding: 8px 12px !important;
     font-size: 11px !important;
   }
+  .fy-hamburger { display: grid !important; }
+  .fy-mobile-menu { display: block !important; }
 
   /* Generic grid collapses */
   .fy-grid-4 { grid-template-columns: repeat(2, 1fr) !important; gap: 16px !important; }
