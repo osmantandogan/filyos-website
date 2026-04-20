@@ -10,9 +10,10 @@ const ITEMS: { ic: IconName; t: string; d: string; tag: string }[] = [
 
 export default function Services() {
   return (
-    <section style={{ background: "#FAFAF8", padding: "128px 24px" }}>
+    <section className="fy-sec-pad" style={{ background: "#FAFAF8", padding: "128px 24px" }}>
       <div style={{ maxWidth: 1360, margin: "0 auto" }}>
         <div
+          className="fy-services-header"
           style={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
@@ -63,7 +64,7 @@ export default function Services() {
             sağlık hizmetini aynı filo ile yürütür.
           </p>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
+        <div className="fy-services-items" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
           {ITEMS.map((it) => (
             <div
               key={it.tag}

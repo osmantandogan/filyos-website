@@ -9,9 +9,10 @@ const TEAM = [
 
 export default function TeamPreview() {
   return (
-    <section style={{ background: "#F2F1EC", padding: "128px 24px" }}>
+    <section className="fy-sec-pad" style={{ background: "#F2F1EC", padding: "128px 24px" }}>
       <div style={{ maxWidth: 1360, margin: "0 auto" }}>
         <div
+          className="fy-team-preview-head"
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -52,7 +53,7 @@ export default function TeamPreview() {
             Tüm ekip
           </Button>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
+        <div className="fy-team-preview-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
           {TEAM.map((p) => (
             <div
               key={p.n}

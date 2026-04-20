@@ -5,6 +5,7 @@ const SECONDARY: IconName[] = ["whatsapp", "mail", "pin"];
 export default function FloatingContact() {
   return (
     <div
+      className="fy-floating"
       style={{
         position: "fixed",
         right: 24,
@@ -23,6 +24,7 @@ export default function FloatingContact() {
     >
       <a
         href="tel:0372"
+        className="fy-floating-phone"
         style={{
           display: "inline-flex",
           alignItems: "center",
@@ -48,7 +50,7 @@ export default function FloatingContact() {
         >
           <Icon name="phone" size={16} color="#fff" />
         </span>
-        Hemen Ara
+        <span className="fy-floating-phone-label">Hemen Ara</span>
       </a>
       {SECONDARY.map((n) => (
         <a

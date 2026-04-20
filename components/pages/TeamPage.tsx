@@ -25,7 +25,7 @@ export default function TeamPage() {
   );
 
   return (
-    <section style={{ background: "#F2F1EC", padding: "120px 24px" }}>
+    <section className="fy-page-pad" style={{ background: "#F2F1EC", padding: "120px 24px" }}>
       <div style={{ maxWidth: 1360, margin: "0 auto" }}>
         <div
           style={{
@@ -40,6 +40,7 @@ export default function TeamPage() {
           — Ekibimiz · 85+ personel
         </div>
         <h1
+          className="fy-team-title"
           style={{
             fontFamily: "var(--font-display)",
             fontWeight: 500,
@@ -79,7 +80,7 @@ export default function TeamPage() {
           })}
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
+        <div className="fy-team-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
           {filtered.map((p) => (
             <div
               key={p.n}

@@ -34,6 +34,7 @@ export default function HeroB() {
   return (
     <section style={{ background: "#FAFAF8", position: "relative", overflow: "hidden" }}>
       <div
+        className="fy-hero-b-grid"
         style={{
           maxWidth: 1360,
           margin: "0 auto",
@@ -53,6 +54,7 @@ export default function HeroB() {
             <Pill tone="lineLight">TP-OTC İŞTİRAKİ</Pill>
           </div>
           <h1
+            className="fy-hero-b-h"
             style={{
               fontFamily: "var(--font-display)",
               fontWeight: 500,
@@ -94,6 +96,7 @@ export default function HeroB() {
             </Button>
           </div>
           <div
+            className="fy-hero-b-stats"
             style={{
               marginTop: 56,
               paddingTop: 28,
@@ -137,6 +140,7 @@ export default function HeroB() {
         {/* RIGHT — operasyon kartı */}
         <div style={{ position: "relative" }}>
           <div
+            className="fy-hero-b-card"
             style={{
               background: "#0B0B0C",
               borderRadius: 28,
@@ -302,6 +306,7 @@ export default function HeroB() {
 
           {/* Sticker */}
           <div
+            className="fy-hero-b-sticker"
             style={{
               position: "absolute",
               top: -24,

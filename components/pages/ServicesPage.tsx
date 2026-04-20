@@ -35,7 +35,7 @@ const ITEMS: { ic: IconName; t: string; d: string; feats: string[] }[] = [
 
 export default function ServicesPage() {
   return (
-    <section style={{ background: "#FAFAF8", padding: "140px 24px" }}>
+    <section className="fy-page-pad" style={{ background: "#FAFAF8", padding: "140px 24px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <div
           style={{
@@ -68,6 +68,7 @@ export default function ServicesPage() {
         {ITEMS.map((s, i) => (
           <div
             key={s.t}
+            className="fy-services-row"
             style={{
               display: "grid",
               gridTemplateColumns: "100px 1fr 320px",
@@ -78,6 +79,7 @@ export default function ServicesPage() {
             }}
           >
             <div
+              className="fy-services-row-num"
               style={{
                 fontFamily: "var(--font-display)",
                 fontSize: 64,
@@ -90,6 +92,7 @@ export default function ServicesPage() {
             </div>
             <div>
               <h3
+                className="fy-services-row-title"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontStyle: "italic",

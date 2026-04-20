@@ -37,6 +37,7 @@ export default function Header({ emergency = true }: { emergency?: boolean }) {
       }}
     >
       <div
+        className="fy-header-inner"
         style={{
           maxWidth: 1360,
           margin: "0 auto",
@@ -50,7 +51,7 @@ export default function Header({ emergency = true }: { emergency?: boolean }) {
           <Logo size={scrolled ? "sm" : "md"} />
         </Link>
 
-        <nav style={{ display: "flex", gap: 22, flex: 1, justifyContent: "center" }}>
+        <nav className="fy-nav-main" style={{ display: "flex", gap: 22, flex: 1, justifyContent: "center" }}>
           {NAV.map((l) => (
             <Link
               key={l.href}
@@ -70,8 +71,9 @@ export default function Header({ emergency = true }: { emergency?: boolean }) {
           ))}
         </nav>
 
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <div className="fy-header-cta" style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <span
+            className="fy-header-lang"
             style={{
               fontFamily: "var(--font-mono)",
               fontSize: 11,
@@ -84,6 +86,7 @@ export default function Header({ emergency = true }: { emergency?: boolean }) {
           {emergency && (
             <a
               href="tel:112"
+              className="fy-acil"
               style={{
                 display: "inline-flex",
                 alignItems: "center",

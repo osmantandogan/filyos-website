@@ -8,9 +8,10 @@ const ITEMS = [
 
 export default function SocialResponsibility() {
   return (
-    <section style={{ background: "#0B0B0C", padding: "128px 24px", color: "#F6F4EE" }}>
+    <section className="fy-sec-pad" style={{ background: "#0B0B0C", padding: "128px 24px", color: "#F6F4EE" }}>
       <div style={{ maxWidth: 1360, margin: "0 auto" }}>
         <div
+          className="fy-social-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "1fr 1.2fr",
@@ -63,6 +64,7 @@ export default function SocialResponsibility() {
             </div>
           </div>
           <div
+            className="fy-social-nums"
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(3,1fr)",
@@ -81,6 +83,7 @@ export default function SocialResponsibility() {
                 }}
               >
                 <div
+                  className="fy-social-num"
                   style={{
                     fontFamily: "var(--font-display)",
                     fontSize: 72,

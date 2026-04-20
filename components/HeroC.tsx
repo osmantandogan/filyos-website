@@ -19,6 +19,7 @@ export default function HeroC() {
       }}
     >
       <div
+        className="fy-hero-c-strip"
         style={{
           borderBottom: "1px solid #0B0B0C",
           display: "flex",
@@ -57,8 +58,9 @@ export default function HeroC() {
         ))}
       </div>
 
-      <div style={{ maxWidth: 1440, margin: "0 auto", padding: "60px 32px" }}>
+      <div className="fy-hero-c-pad" style={{ maxWidth: 1440, margin: "0 auto", padding: "60px 32px" }}>
         <div
+          className="fy-hero-c-head"
           style={{
             display: "grid",
             gridTemplateColumns: "1fr auto",
@@ -80,6 +82,7 @@ export default function HeroC() {
               — TP-OTC İŞTİRAKİ / HEALMEDY MARKASI
             </div>
             <h1
+              className="fy-hero-c-title"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 500,
@@ -118,6 +121,7 @@ export default function HeroC() {
           >
             <div style={{ textAlign: "right" }}>
               <div
+                className="fy-hero-c-big-num"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontSize: 88,
@@ -146,7 +150,7 @@ export default function HeroC() {
           </div>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1.6fr 1fr", gap: 24 }}>
+        <div className="fy-hero-c-grid" style={{ display: "grid", gridTemplateColumns: "1.6fr 1fr", gap: 24 }}>
           <div
             style={{
               position: "relative",

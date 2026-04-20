@@ -10,6 +10,7 @@ const STATS = [
 export default function HeroA() {
   return (
     <section
+      className="fy-hero-a"
       style={{
         position: "relative",
         minHeight: "92vh",
@@ -53,6 +54,7 @@ export default function HeroA() {
       </div>
 
       <div
+        className="fy-hero-a-vertical"
         style={{
           position: "absolute",
           left: 32,
@@ -69,6 +71,7 @@ export default function HeroA() {
       </div>
 
       <div
+        className="fy-hero-a-pad"
         style={{
           position: "relative",
           maxWidth: 1360,
@@ -101,6 +104,7 @@ export default function HeroA() {
             — NO. 0026 · Filyos Endüstri Bölgesi
           </div>
           <h1
+            className="fy-hero-a-title"
             style={{
               fontFamily: "var(--font-display)",
               fontWeight: 500,
@@ -142,6 +146,7 @@ export default function HeroA() {
         </div>
 
         <div
+          className="fy-hero-a-stats"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(4,1fr)",
@@ -160,6 +165,7 @@ export default function HeroA() {
             >
               <div style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
                 <div
+                  className="fy-hero-a-stat-num"
                   style={{
                     fontFamily: "var(--font-display)",
                     fontSize: 56,

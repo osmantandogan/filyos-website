@@ -19,6 +19,7 @@ const ITEMS = [
 export default function Testimonials() {
   return (
     <section
+      className="fy-sec-pad"
       style={{
         background: "#FAFAF8",
         padding: "128px 24px",
@@ -53,7 +54,7 @@ export default function Testimonials() {
           Kamu, sanayi ve yerel yönetim{" "}
           <em style={{ fontStyle: "italic", color: "#d72a05" }}>bizi tercih ediyor</em>.
         </h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
+        <div className="fy-test-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }}>
           {ITEMS.map((q) => (
             <div
               key={q.n}

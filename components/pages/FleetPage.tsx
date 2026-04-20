@@ -36,7 +36,7 @@ const STATUS_BG: Record<FleetItem["status"], string> = {
 
 export default function FleetPage() {
   return (
-    <section style={{ background: "#FAFAF8", padding: "140px 24px" }}>
+    <section className="fy-page-pad" style={{ background: "#FAFAF8", padding: "140px 24px" }}>
       <div style={{ maxWidth: 1360, margin: "0 auto" }}>
         <div
           style={{
@@ -51,6 +51,7 @@ export default function FleetPage() {
           — Filomuz · 12 ARAÇ
         </div>
         <h1
+          className="fy-fleet-title"
           style={{
             fontFamily: "var(--font-display)",
             fontWeight: 500,
@@ -63,6 +64,7 @@ export default function FleetPage() {
         >
           <em style={{ fontStyle: "italic", color: "#d72a05" }}>Donanımlı</em> filomuz.
         </h1>
+        <div className="fy-fleet-wrap">
         <div style={{ border: "1.5px solid #0B0B0C" }}>
           <div
             style={{
@@ -142,6 +144,7 @@ export default function FleetPage() {
               </div>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>

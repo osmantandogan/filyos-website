@@ -11,13 +11,14 @@ export default function ContactPage() {
   return (
     <section style={{ background: "#FAFAF8", minHeight: "80vh" }}>
       <div
+        className="fy-contact-split"
         style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           minHeight: "80vh",
         }}
       >
-        <div style={{ padding: "120px 64px", borderRight: "1px solid #E5E3DC" }}>
+        <div className="fy-contact-left" style={{ padding: "120px 64px", borderRight: "1px solid #E5E3DC" }}>
           <div
             style={{
               fontFamily: "var(--font-mono)",
@@ -122,7 +123,7 @@ export default function ContactPage() {
             </Button>
           </form>
         </div>
-        <div style={{ position: "relative", background: "#0B0B0C", overflow: "hidden" }}>
+        <div className="fy-contact-right" style={{ position: "relative", background: "#0B0B0C", overflow: "hidden" }}>
           <div
             style={{
               position: "absolute",

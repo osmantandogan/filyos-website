@@ -11,6 +11,7 @@ export default function StatsStrip() {
   return (
     <section style={{ background: "#0B0B0C", padding: "80px 24px", color: "#F6F4EE" }}>
       <div
+        className="fy-stats-strip"
         style={{
           maxWidth: 1360,
           margin: "0 auto",

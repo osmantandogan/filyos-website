@@ -15,6 +15,7 @@ export default function PressPage() {
   return (
     <section style={{ background: "#F2F1EC", padding: "80px 0 120px" }}>
       <div
+        className="fy-hero-c-strip"
         style={{
           borderTop: "1px solid #0B0B0C",
           borderBottom: "1px solid #0B0B0C",
@@ -42,6 +43,7 @@ export default function PressPage() {
       </div>
       <div style={{ maxWidth: 1360, margin: "0 auto", padding: "48px 24px" }}>
         <h1
+          className="fy-press-title"
           style={{
             fontFamily: "var(--font-display)",
             fontWeight: 500,
@@ -54,7 +56,7 @@ export default function PressPage() {
         >
           Basında <em style={{ fontStyle: "italic", color: "#d72a05" }}>biz</em>.
         </h1>
-        <div style={{ columnCount: 3, columnGap: 24 }}>
+        <div className="fy-press-cols" style={{ columnCount: 3, columnGap: 24 }}>
           {NEWS.map((n, i) => (
             <article
               key={n.t}

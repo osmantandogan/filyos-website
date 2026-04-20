@@ -21,6 +21,7 @@ export default function Footer() {
     >
       <div style={{ maxWidth: 1360, margin: "0 auto" }}>
         <div
+          className="fy-footer-grid"
           style={{
             display: "grid",
             gridTemplateColumns: "1.3fr 1fr 1fr 1fr",
@@ -85,6 +86,7 @@ export default function Footer() {
           ))}
         </div>
         <div
+          className="fy-footer-bottom"
           style={{
             display: "flex",
             justifyContent: "space-between",
